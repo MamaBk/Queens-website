@@ -1,11 +1,215 @@
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <title>website</title>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/Stylesheet.css">
-</head>
-<body>
-    <h1>Hello! Queen here</h1>
-</body>
-</html>                     
+    <!--font awesome-->
+    <link rel="stylesheet" href="Assets/fontawesome/css/all.min.css">
+  </head>
+  <body>
+    <!--this is the container for the whole project-->
+    <div class="containerr">
+      <!--Icons for the site-->
+        <ul class="icons">
+            <li class="icon1"><a href=""></a><i class="fab fa-github"></i></li>
+            <li class="icon2"><a href="https://www.linkedin.com/in/queen-lesheba-64b713195/?midToken=AQEtYeQH7flIgQ&trk=eml-email_pymk_01-header-102-profile&trkEmail=eml-email_pymk_01-header-102-profile-null-cpxwpn%7Ekazwfmq9%7E8l-null-neptune%2Fprofile%7Evanity%2Eview"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="icon3"><a href=""><i class="far fa-envelope"></i></a></li>
+            <li class="icon4"><a href=""><i class="fas fa-phone"></i></a></li>
+        </ul>
+
+        <!--Burger menu for mobile view only-->
+        <div class="container mobile-only" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <!--Navbar menun that will display on desktop and be invisible mobile-->
+
+        <div id="navbar hide-on-mobile ">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="AboutMe.html">About Me</a>
+            </li>
+            <li>
+              <a href="#">Journey</a>
+            </li>
+            <li>
+              <a href="#">Resume</a>
+            </li>
+            <li>
+              <a href="#contact">Get in touch</a>
+            </li>
+
+          </ul>
+
+        </div>
+        <!--end of header section-->
+
+    <!--my name-->
+    <div class="name">Queenie</div>
+    <br>
+
+<!--created this line to separate the tag section and the header
+-->
+    <div class="line"></div>
+
+<!--tag section-->
+
+    <div class="tag">
+        <h1 class="hi">{HI}</h1>
+        <br>
+        <p class="tagT">&lt;p&gt; I’m a FrontEnd Web developer and passionate coder who is willing to learn and enjoys challenges &lt;/p&gt;</p>        
+    </div>
+
+    <div class="about" id="about">
+        <h2 class="aboutMe">About Me</h2>
+
+        <div class="imgage">
+            <div class="square"></div>
+            <img src="assets/Queen.jfif" alt="professional looking picture of Queen">
+        </div>
+        <p class="aboutT">I am a fun loving person who enjoys spending time with family and friends. I a mother to a 2 year old boy and am always seeking a better version of myself in every shape or form. I have a 7 year background in finance as i worked in standard bank as a prestige and private banking consultant. I am very passionate about technology and anything that brings about a positive change</p>
+        
+        <p class="aboutT1">I love consistency and take criticism well even though its intended to put me down simply because I understand that anything good can be made better. I am very solution driven and will to help whenever needed.  I am very generous and love sharing everything new learned</p>
+        
+        <button class="aboutbtn mobile-only">More about me</button>
+    </div>    
+    
+    <div class="grad">
+      <h2 class="Im">I'm an ADA graduate!</h2>
+
+      <img src="assets/ADA logo.png" alt="ADA logo" class="logo">
+
+      <p class="gradT">ADA came in my life as a point I'd consider perfect. I knew nothing about technology. Every little thing we did excited me because I knew it was leading me to a better place. My 1st website attempt was just words and pictures because we were being taught HTML5, It was fulfilling to see what I could do. Thinking that I was complete, CSS was introduced. It blew my mind even more to see all the beautiful things i could do,  then Javascript came in to play, that was when I started seeing my sites coming to life even more and that swept me off my feet. I am grateful to ADA for having introduced me to the world of technology. I knew it is  what I wanted to do, I just didn't know though that my passion lies in the path of software development.</p> 
+
+      <p class="gradT1">
+      We did a lot of projects to enhance our skills and put into practice what we have learned. My personal favourites are  the apple watch  website, the mario and luigi projects, we even attempted to make games. I tried tetris and that was mind blowing indeed. My most Favorite is the newspaper project where we had to improve a newspaper site. Here we learned JavaScript in depth and other systems like comder and Github and my team work was enhanced too, there is still a whole lot more to learn but i am blessed to have been exposed to all of this in my time with ADA,  i can't help but continue being hungry to learn and see what else is out there for me.
+      </p>
+
+      <button class=journey>My Journey at ADA</button>
+      <button class="cv">View my CV</button>
+    </div>
+
+    <div class="testimonial">
+
+      <h2 class="word">Testimonials</h2>
+
+      <div class="ada">
+        <img src="assets/ADA logo.png" alt="ADA logo" class="placeholder">
+
+        <div class="call">
+          <i class="fab fa-linkedin-in"></i>
+          <p class="min">contact ADA</p>
+        </div>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsa minus repudiandae exercitationem itaque at delectus? Quidem praesentium, minus est ab voluptas recusandae! A provident commodi aut perferendis architecto praesentium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab suscipit, iure corporis, animi similique deleniti, ad accusamus. <br> <strong>-ADA</strong> </p>
+      </div>
+
+      <div class="laura">
+        <img src="Assets/LAURA.jfif" alt="placeholder for Andy" class="placeholder">
+
+        <div class="call">
+          <i class="fab fa-linkedin-in"></i>
+          <p class="min">contact Laura</p>
+        </div>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsa minus repudiandae exercitationem itaque at delectus? Quidem praesentium, minus est ab voluptas recusandae! A provident commodi aut perferendis architecto praesentium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab suscipit, iure corporis, animi similique deleniti, ad accusamus. <br>!<strong>-Laura</strong></p>
+      </div>
+
+      <div class="kate">
+        <img src="Assets/KATE.jfif" alt="placeholder for kate" class="placeholder">
+
+        <div class="call">
+          <i class="fab fa-linkedin-in"></i>
+          <p class="min">contact Kate</p>
+        </div>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsa minus repudiandae exercitationem itaque at delectus? Quidem praesentium, minus est ab voluptas recusandae! A provident commodi aut perferendis architecto praesentium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab suscipit, iure corporis, animi similique deleniti, ad accusamus. <br>! <strong>-Kate</strong></p>
+      </div>
+
+      <div class="andy">
+        <img src="Assets/ANDY.jfif" alt="placeholder for Andy" class="placeholder">
+
+        <div class="call">
+          <i class="fab fa-linkedin-in"></i>
+          <p class="min">contact Andria</p>
+        </div>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsa minus repudiandae exercitationem itaque at delectus? Quidem praesentium, minus est ab voluptas recusandae! A provident commodi aut perferendis architecto praesentium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab suscipit, iure corporis, animi similique deleniti, ad accusamus. <br> <strong>-Andria</strong></p>
+      </div>
+    </div>
+
+    <!--get in touc section-->
+
+    <div id="reach" class="reach">
+      <h2 class="touch">Get in touch!</h2>
+
+      <p class="touchT">With all that I have learned, I am excited to start on new projects and put my skills into practice. I am very passionate about my new career and all i want to do is continue learning and doing more. There is nothing like new energy in any environment, I am that new energy in your workspace and will not give anything less than perfect. I can be corrected and be sure when that is corrected, it will be even better. The aim is alway  to please, so delivering on time is also a priority. Get in touch with me and see what I have to offer which is the Best.
+        You may also get in touch  if you want me to create your website or want to find out more about ADA or get to know me better , I’ll be happy to get back to you as soon as possible with any information needed or requests.
+        </p>
+
+        <form>
+          <div>
+            <input class='contactForm1' type="email" class="form-control" placeholder="Your name">
+          </div>
+          <div>
+            <input class='contactForm2' type="email" class="form-control" placeholder="Your email">
+          </div>
+          <div>
+            <textarea class='contactForm3' rows="5" placeholder="Your message"></textarea>
+          </div>
+          <button class="send">Send</button>
+        </form>
+    </div>
+<!--footer ssection-->
+
+    <div class="footer">
+      <ul class="Ficons">
+        <li class="icon1"><a href=""></a><i class="fab fa-github"></i></li>
+        <li class="icon2"><a href="https://www.linkedin.com/in/queen-lesheba-64b713195/?midToken=AQEtYeQH7flIgQ&trk=eml-email_pymk_01-header-102-profile&trkEmail=eml-email_pymk_01-header-102-profile-null-cpxwpn%7Ekazwfmq9%7E8l-null-neptune%2Fprofile%7Evanity%2Eview"><i class="fab fa-linkedin-in"></i></a></li>
+        <li class="icon3"><a href=""><i class="far fa-envelope"></i></a></li>
+        <li class="icon4"><a href=""><i class="fas fa-phone"></i></a></li>
+      </ul>
+      <p class="copy">Copyright 2020, made by</p><p class="nna">Queen Lesheba</p>
+
+
+    </div>
+
+    </div>
+
+
+
+
+   <!-- <div class="logo">
+        <h2 class="tablet-only">lil logo</h2>
+        <h2 class="hide-on-mobile desktop-only">big logo</h2>
+    </div>
+
+
+    <div class="block">
+        <h1>Hello! Queen here</h1>
+        <p class="mobile-only">you are on a phone</p>
+        <p class="hide-on-mobile tablet-only">you are on ipad</p>
+        <p class="hide-on-mobile desktop-only">you are on a computer</p>
+    </div>
+    
+    <div class="red-block hide-on-mobile desktop-only" ><i class="fas fa-tree"></i></div>-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="JS/scripts.js"></script>
+  </body>
+</html>
+                      
