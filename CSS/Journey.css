@@ -1,0 +1,356 @@
+body{
+    background-color:black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    padding: 0;
+    margin:0;
+    overflow-x: hidden;    
+}
+/*general classes*/
+
+#hide-on-mobile{
+   display: none; 
+}
+.mobile-only{
+    display: block;
+}
+.desktop-only{
+    display: none;
+}
+
+/*header section*/
+
+.icons li{
+    font-size: 15px;
+    display: inline;
+    position: relative;
+    top: 25px;
+    left: -30px;
+    cursor: pointer;
+    border: white 1.5px solid;
+    border-radius: 50%;
+    padding: 4px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a hover{
+    text-decoration: none;
+}
+/*styling the burger menu*/
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    left: 300px;
+    bottom: 30px;
+    border: white solid 1px;
+    width: 40px;
+    border-radius: 50%;
+    padding:5px;
+    align-items: center;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 13px;
+    height: 1.5px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.2s;
+    position: relative;
+    left:5px;    
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  /*end of styling the menu*/
+
+/*navbar styling*/
+
+#navbar{
+    float: right;
+    background-color:none;
+    position: relative;
+    bottom: 35px;
+    z-index: 1;
+    display: none;
+}
+ul li{
+    display: none;
+    margin-left: 3px;
+}
+
+/* name and line section*/
+
+ .name{
+     font-size: 40px;
+     position: relative;
+     top:-20px;
+     left:100px;
+     color: #eb5e28;     
+ }
+  .line{
+      width:90vw;
+      margin: auto;
+      background-color: white;
+      height: 1px;
+      position: relative;
+      top: -20px;
+      margin-top: 50px;
+  }
+
+  .story{
+    color: #f7931e;
+    text-align: center;
+    position: relative;
+    top: 20PX;
+    font-size: 40px;
+  }
+
+  /*details about me*/
+  .more{
+    width:100vw;
+    height: 340vh;
+    margin-top: 70px;
+    background-color: rgb(37, 37, 37);
+  }
+
+  .def{
+    color: #f7931e;
+    position: relative;
+    top: 20PX;
+    font-weight: 500;
+    font-size: 25px
+
+  }
+
+  .them{
+      color: white;
+      font-size: 12px;
+      width: 80%;
+      position: relative;
+      left: 40px;
+      top: 30px;
+      text-align: left;
+
+  }
+  .them a{
+    color: #f7931e;
+    font-weight: 700;
+  }
+  .select{
+    color: #f7931e;
+    position: relative;
+    top: 70px;
+    font-weight: 500;
+    font-size: 25px
+  }
+  .sel{
+    color: white;
+    font-size: 12px;
+    width: 80%;
+    position: relative;
+    left: 40px;
+    top: 80px;
+    text-align: left;
+  }
+
+  .code{
+    color: #f7931e;
+    position: relative;
+    top: 120px;
+    font-weight: 500;
+    font-size: 25px
+  }
+  .tell{
+    color: white;
+    font-size: 12px;
+    width: 80%;
+    position: relative;
+    left: 40px;
+    top: 130px;
+    text-align: left;
+  }
+  .teller{
+    color: white;
+    font-size: 12px;
+    width: 80%;
+    position: relative;
+    left: 40px;
+    top: 130px;
+    text-align: left;
+  }
+  .telly{
+    color: white;
+    font-size: 12px;
+    width: 80%;
+    position: relative;
+    left: 40px;
+    top: 130px;
+    text-align: left;
+  }
+
+
+
+  /* --------------------------------------------------------------media queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (orientation: landscape) { 
+}
+
+/* // --------------------------------------------------------------Medium devices (tablets) */
+@media (min-width: 768px) {
+    /* general classes*/
+   /* .mobile-only{
+        display: none;
+    }
+    .tablet-only{
+        display: block;
+    }*/
+
+    /*header section*/
+
+    .block{
+        height:20vw;
+    }
+}
+
+/* // --------------------------------------------------------------Large devices (ipad pro) */
+@media (min-width: 992px) { 
+   /*general classes*/
+ 
+}
+
+/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+/*general classes*/
+
+}
+/* --------------------------------------------------------------Extra large devices landscape */
+@media (min-width: 1200px) and (orientation: landscape) { 
+body{
+    background-color:black;
+    color: white;
+    font-family: Montserrat;
+    font-size: 1.5em;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.mobile-only{
+    display: none;
+}
+.desktop-only{
+    display: block;
+}
+
+ .icons{
+     position: relative;
+     left: 1220px;
+     top: 20px;
+ } 
+ .icons li{
+    margin-left: 0px;
+ }  
+ #navbar{
+     position: relative;
+     left: -250px;
+     top: 1000px;
+ }   
+ ul li{
+    display: inline;
+    margin-left: 40px;
+    position: relative;
+    left: 350px;
+    top: 160px;
+}
+ .name{
+     font-size: 50px;
+     position: relative;
+     top: -50px;
+     left: 600px;
+ }
+
+ /*story section*/
+
+ .story{
+        color: #f7931e;
+        text-align: center;
+        position: relative;
+        top: 20PX;
+        font-size: 40px;
+      
+ }
+ .myJ{
+     margin-top: 80px;
+ }
+
+ .more{
+    width:100vw;
+    height: 180vh;
+    margin-top: 70px;
+    background-color: rgb(36, 35, 35);
+}
+.defi{
+    position: relative;
+    top: 100px;
+    left: 150px;
+}
+.def{
+    position: relative;
+    left: -550px;
+
+}
+.them{
+    width:25%;
+}
+.selected{
+    position: relative;
+    top: 300px;
+    left: 150px;
+}
+.select{
+    position: relative;
+    left: -580px;
+}
+.sel{
+    width: 25%;
+}
+.coding{
+    position: relative;
+    left: 800px;
+    bottom: 420px;
+}
+.code{
+    position: relative;
+    left: -550px;
+}
+.tell{
+    width:25%;
+}
+.teller{
+    width:25%;
+}
+.telly{
+    width:25%;
+}
+ 
+}
+
+/* --------------------------------------------------------------Internet Explorer */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+}

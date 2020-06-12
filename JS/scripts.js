@@ -12,4 +12,12 @@ function myFunction(x) {
       location.href = "navbar.html";
   })
 
- 
+ /* Open navbar overlay on mobile*/
+function openNav() {
+    document.getElementById("myNav").style.display = "block";
+    console.log('hello');
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+  }

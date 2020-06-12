@@ -40,6 +40,7 @@ body{
  a hover{
      text-decoration: none;
  }
+
  /*styling the burger menu*/
  .container {
     display: inline-block;
@@ -48,21 +49,22 @@ body{
     left: 300px;
     bottom: 30px;
     border: white solid 1px;
-    width: 40px;
+    width: 10px;
     border-radius: 50%;
     padding:5px;
-    align-items: center;
+    
   }
-   
+  
   .bar1, .bar2, .bar3 {
     width: 15px;
-    height: 2px;
+    height: 1.5px;
     background-color: white;
     margin: 4px 0;
     transition: 0.2s;
-     
-     
-   }
+    position: relative;
+    left:5px;  
+    align-items: center;  
+  }
    
    .change .bar1 {
      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -91,24 +93,27 @@ body{
      display: none;
      margin-left: 3px;
  }
+
  
  /* name and line section*/
  
-  .name{
-      font-size: 40px;
-      position: relative;
-      top:-20px;
-      left:100px;
-      color: #eb5e28;     
-  }
-   .line{
-       width:90vw;
-       margin: auto;
-       background-color: white;
-       height: 1px;
-       position: relative;
-       top: -20px;
-   }
+/*name section*/
+
+.name{
+    font-size: 40px;
+    position: relative;
+    top:-20px;
+    left:100px;
+    color: #eb5e28;     
+}
+ .line{
+     width:90vw;
+     margin: auto;
+     background-color: white;
+     height: 1px;
+     position: relative;
+     top: -20px;
+ }
 
 /*get in touch section*/
 .reach{
@@ -134,17 +139,20 @@ body{
 
 form{
     margin: 50px;
+    
 }
 
 .contactForm1{
     width: 100%;
+    height: 30px;
     background-color: gray;
     border: none;
     
 }
 .contactForm2{
     margin-top: 10px;
-    width: 100%;    
+    width: 100%; 
+    height: 30px;   
     background-color: gray;
     border: none;
 
@@ -152,6 +160,7 @@ form{
 .contactForm3{
     margin-top: 10px;
     width: 100%;
+    height: 150px;
     background-color: gray;
     border: none;
 }
@@ -284,6 +293,7 @@ form{
     top: 80px;
     left: 150px;
     width: 70%;
+    
 }
 .send{
     position: relative;

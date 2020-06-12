@@ -41,13 +41,16 @@ a{
     position: relative;
     left: 300px;
     bottom: 30px;
+    text-align: center;
     border: white solid 1.5px;
-    padding:5px;
-    padding-right: 3px;
+    padding:3px;
+    padding-right: 5px;
     border-radius: 50%;
     width: 20px;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 16px;
 }
+
 
 .items li{
     text-align: center;
