@@ -15,13 +15,21 @@ body{
 }
 
 /* fonts */
+.hi h1{
+    font-weight: 500;
+    font-size: 2.5em;
+    color: white;
+}
+.tag{
+    color: #f7931e;
+}
 h1{
     font-size: 2em;
     font-weight: 300;
-    color: #cf9146;
+    color: #f7931e;
 }
-h1.name{
-    color: #df6231;
+h1.name .get{
+    color: #eb5e28;
     font-size: 2.5em;
 }
 
@@ -30,11 +38,31 @@ h1.name{
     border-radius: 50px;
 }
 .btn-primary{
-    background: #df6231;
+    background:#eb5e28;
     border: none;
+    width: 250px;
 }
 .btn-primary:hover, .btn-primary:focus{
     background: #cf9146;
+}
+.journey{
+    background-color: gray;
+}
+.f-name strong{
+    color: #eb5e28;
+}
+.form{
+    border: none;
+}
+.form input {
+    background-color: gray;
+}
+.form textarea{
+    background-color: gray;
+
+}
+.form ::placeholder{
+    color: white;
 }
 
 
@@ -88,10 +116,10 @@ ul.icons li{
 .icon{
     border: 1px solid white;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    font-size: 25px;
-    padding-top: 4px;
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    padding-top: 1px;
     text-align: center;
 }
 .icon a{
@@ -99,7 +127,7 @@ ul.icons li{
     transition: color 0.5s;
 }
 .icon a:hover{
-    color: #df6231;
+    color: #eb5e28;
 }
 .icon-menu{
     float: right;
@@ -120,9 +148,13 @@ img.profile-image{
 
 /* testimonial */
 .orange-block{
-    background: #df6231;
+    background: #eb5e28;
     width: 100%;
     height: 120px;
+}
+.orange-block a{
+    color: white;
+    font-weight: 500;
 }
 
 /* --------------------------------------------------------------media queries */
@@ -204,7 +236,7 @@ img.profile-image{
 
     /* about section */
     img.profile-image{
-        width: 70%;
+        width: 90%;
     }
 
 }
