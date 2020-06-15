@@ -1,420 +1,129 @@
+html{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 body{
     background-color:black;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
+    font-weight: 300;
     padding: 0;
     margin:0;
     overflow-x: hidden;    
 }
+
+/* fonts */
+h1{
+    font-size: 2em;
+    font-weight: 300;
+    color: #cf9146;
+}
+h1.name{
+    color: #df6231;
+    font-size: 2.5em;
+}
+
+/* buttons */
+.btn{
+    border-radius: 50px;
+}
+.btn-primary{
+    background: #df6231;
+    border: none;
+}
+.btn-primary:hover, .btn-primary:focus{
+    background: #cf9146;
+}
+
+
 /*general classes*/
 
-#hide-on-mobile{
+.hide-on-mobile{
    display: none; 
 }
 .mobile-only{
     display: block;
 }
-.desktop-only{
-    display: none;
+.mobile-only-mt{
+    margin-top: 40px;
 }
 
+.grey{
+    background: #1a1a1a;
+}
+
+/* mobile menu */
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    z-index: 100;
+    background: #1a1a1a;
+    height: 100vh;
+    padding-top: 20vh;
+    transition: left 0.5s;
+}
+.mobile-menu a{
+    color: white;
+    font-weight: 500;
+    font-size: 2em;
+}
+.mobile-menu a.active{
+    color: #cf9146;
+}
+.all-icons{
+    z-index: 200;
+}
 /*header section*/
-
-.icons li{
-    font-size: 15px;
-    display: inline;
-    position: relative;
-    top: 25px;
-    left: -30px;
-    cursor: pointer;
-    border: white 1.5px solid;
-    border-radius: 50%;
-    padding: 4px;
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
-a hover{
-    text-decoration: none;
-}
-/*styling the burger menu*/
-.container {
+ul.icons li{
     display: inline-block;
-    cursor: pointer;
-    position: relative;
-    left: 300px;
-    bottom: 30px;
-    border: white solid 1px;
-    width: 40px;
+}
+.icon{
+    border: 1px solid white;
     border-radius: 50%;
-    padding:5px;
-    align-items: center;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 13px;
-    height: 1.5px;
-    background-color: white;
-    margin: 4px 0;
-    transition: 0.2s;
-    position: relative;
-    left:5px;    
-  }
-  
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-  /*end of styling the menu*/
-
-/*navbar styling*/
-
-#navbar{
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    padding-top: 4px;
+    text-align: center;
+}
+.icon a{
+    color: white;
+    transition: color 0.5s;
+}
+.icon a:hover{
+    color: #df6231;
+}
+.icon-menu{
     float: right;
-    background-color:none;
-    position: relative;
-    bottom: 35px;
-    z-index: 1;
-    display: none;
 }
-ul li{
-    display: none;
-    margin-left: 3px;
+hr{
+    border-top: 1px solid white;
+}
+a.active{
+    font-weight: 500!important;
 }
 
-/* name and line section*/
-
- .name{
-     font-size: 40px;
-     position: relative;
-     top:-20px;
-     left:100px;
-     color: #eb5e28;     
- }
-  .line{
-      width:90vw;
-      margin: auto;
-      background-color: white;
-      height: 1px;
-      position: relative;
-      top: -20px;
-  }
-
-  /*tag section*/
-  .hi{
-      font-size: 100px;
-      color: white;
-  }
-  
-
-  .tag{
-    width:360px;
-    height:55vh;
-    text-align: center;
-    background-color: rgb(36, 35, 35);
-    margin-top: 25px;
-  }
-  .tagT{
-    color: #f7931e;
-  }
-
-  /*about me section*/
-
-  .about{
-      width:100vw;
-      height: 150vh;
-      margin-top: 70px;
-      background-color: rgb(36, 35, 35);
-  }
-
-  .aboutMe{
-    color: #f7931e;
-    text-align: center;
-    position: relative;
-    top: 20PX;
-  }
-/*i made a square div so it can be behind the image*/
-
-  .square{
-      width: 180px;
-      height:180px;
-      background-color: grey;
-      position: relative;
-      left: 80px;
-      top:35px;    
-  }
-
-  img{
-      width: 180px;
-      position: relative;
-      left: 109px;
-      bottom: 115px;
-  }
-  
-
-  .aboutT{
-      font-size: 12px;
-      position: relative;
-      bottom: 80px;
-      left: 50px;
-      width:80vw;
-      
-  }
-  .aboutT1{
-    font-size: 12px;
-    position: relative;
-    bottom: 80px;
-    left: 50px;
-    width:80vw;
-    
-}
-/*this button will not show on desktop, only on mobile*/
-
-.aboutbtn{
-    background-color: #eb5e28;
-    color: white;
-    font-weight: 500;
-    width: 200px;
-    height:50px;
-    border-radius: 20%;
-    position: relative;
-    bottom: 70px;
-    left: 75px;
-    border: none;
-    font-size: 18px;
+/* about me section */
+img.profile-image{
+    width: 70%;
+    box-shadow: -30px -30px #666666;
+    border: 2px solid white;
 }
 
-/*i'm an ada graduate section*/
-
-.grad{
-    width:100vw;
-    height: 190vh;
-    margin-top: 70px;
-    background-color: rgb(36, 35, 35);  
-}
-
-.Im{
-    color: #f7931e;
-    text-align: center;
-    position: relative;
-    top: 20PX;    
-}
-
-
-.logo{
-    width: 250px;
-    position: relative;
-    top: 70px;
-    left: 50px;
-}
-.gradT{
-    font-size: 12px;
-    width: 80vw;
-    position: relative;
-    left: 40px;
-    top: 120px;
-    
-
-}
-.gradT1{
-    font-size: 12px;
-    width: 80vw;
-    position: relative;
-    left: 40px;
-    top: 120px;
-}
-.journey{
-    background-color: gray;
-    color: white;
-    font-weight: 500;
-    width: 200px;
-    height:50px;
-    border-radius: 25px;
-    position: relative;
-    top: 140px;
-    left: 75px;
-    border: none;
-    font-size: 18px;
-}
-.cv{
-    background-color: #eb5e28;
-    color: white;
-    font-weight: 500;
-    width: 200px;
-    height:50px;
-    border-radius: 25px;
-    position: relative;
-    top: 160px;
-    left: 75px;
-    border: none;
-    font-size: 18px;
-}
-
-/*testimonial section*/
-
-.testimonial{
-    width:100vw;
-    height: 210vh;
-    margin-top: 70px;
-    background-color: rgb(36, 35, 35);
-}
-
-.word{
-    color: #f7931e;
-    text-align: center;
-    position: relative;
-    top: 20PX; 
-}
-.placeholder{
-    width: 90px;
-    height:90px;
-    position: relative;
-    top: 100px;
-    left: 30px;
-}
-
-.call{
-    width: 90px;
-    height:90px;
-    text-align: center;
-    position: relative;
-    top:100px;
-    left: 30px;    
-    background-color: #eb5e28;
-}
-
-.text{
-    font-size: 12px;
-    width:55%;
-    position: relative;
-    left: 130px;
-    bottom: 80px;
-}
-.min{
-    font-size: 12px;
-}
-.laura{
-    position: relative;
-    bottom: 150px;
-}
-.kate{
-    position: relative;
-    bottom: 300px;
-}
-.andy{
-    position: relative;
-    bottom: 450px;
-}
-/*end of testiminials*/
-
-/*get in touch section*/
-.reach{
-    width:100vw;
-    height: 120vh;
-    margin-top: 70px;
-    background-color: rgb(36, 35, 35);
-}
-
-.touch{
-    color: #f7931e;
-    text-align: center;
-    position: relative;
-    top: 20PX; 
-}
-.touchT{
-    font-size: 12px;
-    width: 90vw;
-    position: relative;
-    left:15px;
-    margin-top: 30px;
-}
-
-form{
-    margin: 50px;
-}
-
-.contactForm1{
+/* testimonial */
+.orange-block{
+    background: #df6231;
     width: 100%;
-    background-color: gray;
-    border: none;
-    
+    height: 120px;
 }
-.contactForm2{
-    margin-top: 10px;
-    width: 100%;    
-    background-color: gray;
-    border: none;
-
-}
-.contactForm3{
-    margin-top: 10px;
-    width: 100%;
-    background-color: gray;
-    border: none;
-}
-::placeholder{
-    color: white;
-    font-size: 15px;
-}
-
-.send{
-    background-color: #eb5e28;
-    color: white;
-    font-weight: 500;
-    width: 200px;
-    height:50px;
-    border-radius: 25px;
-    position: relative;
-    top:20px;
-    left: 30px;
-    border: none;
-    font-size: 18px;
-
-}
-/*section for the footer*/
-
-.footer{
-    margin-top: 60px;
-}
-.Ficons li{
-    font-size: 20px;
-    display: inline;
-    position: relative;
-    top: 25px;
-    left: 60px;
-    cursor: pointer;
-    border: white 1.5px solid;
-    border-radius: 50%;
-    padding: 4px;
-    
-}
-.copy{
-    font-size: 12px;
-    color: gray;
-    position: relative;
-    left: 75px;
-    top: 15px;
-}
-.nna{
-    color: #f7931e;
-    font-size: 12px;
-    position: relative;
-    left: 227px;
-    bottom:19px;
-}
-
-
-
-
 
 /* --------------------------------------------------------------media queries */
 
@@ -428,18 +137,18 @@ form{
 /* // --------------------------------------------------------------Medium devices (tablets) */
 @media (min-width: 768px) {
     /* general classes*/
-   /* .mobile-only{
+   .mobile-only{
         display: none;
     }
     .tablet-only{
         display: block;
-    }*/
-
-    /*header section*/
-
-    .block{
-        height:20vw;
     }
+
+    /* about section */
+    img.profile-image{
+        width: 30%;
+    }
+
 }
 
 /* // --------------------------------------------------------------Large devices (ipad pro) */
@@ -455,284 +164,49 @@ form{
 }
 /* --------------------------------------------------------------Extra large devices landscape */
 @media (min-width: 1200px) and (orientation: landscape) { 
-body{
-            background-color:black;
-            color: white;
-            font-family: Montserrat;
-            font-size: 1.5em;
-            margin:0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        .mobile-only{
-            display: none;
-        }
-        .desktop-only{
-            display: block;
-        }
+    .tablet-down{
+        display: none;
+    }
+    .desktop-only{
+        display: block;
+    }
+    .mobile-only-mt{
+        margin-top: 0;
+    }
+    .desktop-only-mt{
+        margin-top: 5vh!important;
+    }
+    .container-fluid{
+        padding: 0 5%;
+    }
+    .grey{
+        padding: 100px 300px!important;
+    }
 
- .icons{
-     position: relative;
-     left: 1220px;
-     top: 20px;
- } 
- .icons li{
-    margin-left: 0px;
- }  
- #navbar{
-     position: relative;
-     left: -250px;
-     top: 1000px;
- }   
- ul li{
-    display: inline;
-    margin-left: 40px;
-    position: relative;
-    left: 350px;
-    top: 160px;
-}
- .name{
-     font-size: 50px;
-     position: relative;
-     top: -50px;
-     left: 600px;
- }
+    /* header */
+    .icons{
+        float: right;
+    }
+    .desktop-menu li{
+        display: inline-block;
+        margin: 0 10px;
+        text-transform: uppercase;
+    }
+    .desktop-menu a{
+        color: white;
+        font-weight: 200;
+        transition: color 0.5s;
+    }
+    .desktop-menu a:hover{
+        text-decoration: none;
+        color: #cf9146;
+    }
 
- .tag{
-     width: 90vw;
-     margin: auto;
-     margin-top: 100px;
- }
- .hi{
-    position: relative;
-    top: 50px;
- }
- .tagT{
-     width: 40%;
-     position: relative;
-     left: 430px;
-     top: 50px;
- }
- .about{
-    width: 90vw;
-    height: 700px;
-    margin: auto;
-    margin-top: 100px;
- }
- .aboutMe{
-     font-size: 50px;
-     position: relative;
-     top: 80px;
-     left: 200px;
- }
- img{
-    width: 250px;
-    position: relative;
-    bottom: 180px;
- }
- .square{
-     width: 250px;
-     height: 250px;
- }
-.imgage{
-    position: relative;
-    top: 150px;
-}
+    /* about section */
+    img.profile-image{
+        width: 70%;
+    }
 
-.aboutT{
-    font-size: 18px;
-    position: relative;
-    left: 550px;
-    bottom: 380px;
-    width: 50%;
-
-
-}
-.aboutT1{
-    font-size:18px;
-    position: relative;
-    left: 550px;
-    bottom: 380px;
-    width: 50%;
-}
-.aboutbtn{
-    position: relative;
-    bottom: 350px;
-    left: 600px;
-}
-.grad{
-    width: 90vw;
-    height: 1000px;
-    margin: auto;
-    margin-top: 100px;
-}
-.Im{
-    position: relative;
-    left: 520px;
-    top:50px;
-    font-size:50px;
-    width: 50%;
-}
-.logo{
-    width: 400px;
-    position: relative;
-    top: 100px;
-}
-.gradT{
-    font-size:18px;
-    position: relative;
-    left: 550px;
-    top: -150px;
-    width: 50%;
-    
-}
-.gradT1{
-    font-size:18px;
-    position: relative;
-    left: 550px;
-    top: -150px;
-    width: 50%;
-    
-}
-.journey{
-    position: relative;
-    top: -130px;
-    left: 600px;
-}
-.cv{
-    position: relative;
-    top: -130px;
-    left: 680px;
-}
-
-/*testimonial section*/
-.testimonial{
-    width: 90vw;
-    height: 900px;
-    margin: auto;
-    margin-top: 100px;
-}
-
-.word{
-    position: relative;
-    left: 350px;
-    top:50px;
-    font-size:50px;
-    width: 50%;
-}
-.placeholder{
-    width: 100px;
-    position: relative;
-    left: 200px;
-    bottom: 350px;
-    height:100px;
-    
-}
-.call{
-    width: 100px;
-    position: relative;
-    left: 200px;
-    bottom: 350px;
-    height:100px;
-   
-    
-}
-.min{
-    font-size: 18px;
-}
-.text{
-    font-size:16px;
-    width: 20%;
-    position: relative;
-    left: 350px;
-    bottom: 120px;
-}
-
-.kate{
-    position: relative;
-    left: 600px;
-    bottom: 1100px;
-}
-.andy{
-    position: relative;
-    left: 600px;
-    bottom: 1260px;
-}
-
-/*get in  toc section*/
-.reach{
-    width: 90vw;
-    height: 800px;
-    margin: auto;
-    margin-top: 100px;
-}
-
-.touch{
-    position: relative;
-    left: 350px;
-    top:50px;
-    font-size:50px;
-    width: 50%;
-}
-
-.touchT{
-    font-size: 18px;
-    position: relative;
-    top: 80px;
-    left: 150px;
-    width: 80%;
-}
-form{
-    position: relative;
-    top: 80px;
-    left: 150px;
-    width: 70%;
-}
-.send{
-    position: relative;
-    left: 380px;
-}
-
-.footer{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-.Ficons li{
-    margin-left: 5px;
-    position: relative;
-    left: 600px;
-}
-
- /*general classes*/
-/*.tablet-only{
-    display: none;
-}*/
-.desktop-only{
-    display: block
-}
-.copy{
-    position: relative;
-    left: 620px;
-
-}
-.nna{
-    position: relative;
-    left: 775px;
-
-}
- /*header section*/
-/* .block{
-     margin-top: 10px;
- }
-
- .red-block{
-     background-color: red;
-     width: 100px;
-     height: 100px;
-     border-radius: 50%;
-     margin-left: 200px;
-
- }*/
 }
 
 /* --------------------------------------------------------------Internet Explorer */
