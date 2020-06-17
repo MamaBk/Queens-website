@@ -14,18 +14,25 @@ body{
     overflow-x: hidden;    
 }
 
+
+
+
 /* fonts */
 .hi h1{
-    font-weight: 500;
+    font-weight: 200;
     font-size: 2.5em;
     color: white;
 }
+span{
+    color: gray;
+}
 .tag{
     color: #f7931e;
+    font-weight: 500;
 }
 h1{
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 300    ;
     color: #f7931e;
 }
 h1.name .get{
@@ -47,15 +54,18 @@ h1.name .get{
 }
 .journey{
     background-color: gray;
+    margin-bottom: 10px;
 }
-.f-name strong{
-    color: #eb5e28;
-}
+
+
+/*contact section*/
+
 .form{
     border: none;
 }
 .form input {
     background-color: gray;
+    height:30px;
 }
 .form textarea{
     background-color: gray;
@@ -63,6 +73,13 @@ h1.name .get{
 }
 .form ::placeholder{
     color: white;
+}
+/*footer section*/
+.fname{
+    font-size: 10px;
+}
+.f-name strong{
+    color: #eb5e28;
 }
 
 
@@ -156,6 +173,14 @@ img.profile-image{
     color: white;
     font-weight: 500;
 }
+/*I want to move the names to the right*/
+.lecture{
+    text-align: right;
+}
+/*reduced the font on mobile*/
+.ttext{
+    font-size: 15px;
+}
 
 /* --------------------------------------------------------------media queries */
 
@@ -181,6 +206,24 @@ img.profile-image{
         width: 30%;
     }
 
+
+    /* ---Start Spacing / Layout Styles--- */
+.margin-left-40
+{
+    margin-left: 40px;
+}
+
+.margin-left-50
+{
+    margin-left: 50px;
+}
+
+.margin-left-80
+{
+    margin-left: 80px;
+}
+/* ---End Spacing / Layout Styles--- */
+
 }
 
 /* // --------------------------------------------------------------Large devices (ipad pro) */
@@ -196,7 +239,8 @@ img.profile-image{
 }
 /* --------------------------------------------------------------Extra large devices landscape */
 @media (min-width: 1200px) and (orientation: landscape) { 
-    .tablet-down{
+
+   .tablet-down{
         display: none;
     }
     .desktop-only{
@@ -211,6 +255,22 @@ img.profile-image{
     .container-fluid{
         padding: 0 5%;
     }
+    .hi{font-size: 3em;
+        font-weight: 200;
+    
+    }
+    .arrow{
+        color: gray;
+        height: 45px;
+        width: 30px;
+        border: gray 1px solid;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        left: 24vw;
+    }
+
     .grey{
         padding: 100px 300px!important;
     }
@@ -236,8 +296,31 @@ img.profile-image{
 
     /* about section */
     img.profile-image{
-        width: 90%;
+        width: 100%;
     }
+    .ngami{
+        margin-left: 30px;
+        
+    }
+
+
+
+    /* ---Start Spacing / Layout Styles--- */
+.margin-left-40
+{
+    margin-left: 40px;
+}
+
+.margin-left-50
+{
+    margin-left: 50px;
+}
+
+.margin-left-80
+{
+    margin-left: 80px;
+}
+/* ---End Spacing / Layout Styles--- */
 
 }
 
