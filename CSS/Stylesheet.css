@@ -29,6 +29,7 @@ span{
 .tag{
     color: #f7931e;
     font-weight: 500;
+    font-size: 1.2em;
 }
 h1{
     font-size: 2em;
@@ -202,8 +203,8 @@ img.profile-image{
     }
 
     /* about section */
-    img.profile-image{
-        width: 30%;
+    .profile-image img{
+        width: 120px;
     }
 
 
@@ -254,7 +255,8 @@ img.profile-image{
     }
     
     .container-fluid{
-        padding: 0 5%;
+        max-width: 90vw;
+        margin: auto;
     }
     .hi{font-size: 3em;
         font-weight: 200;
@@ -269,11 +271,11 @@ img.profile-image{
         padding-top: 10px;
         padding-bottom: 10px;
         position: relative;
-        left: 24vw;
+        left: 30vw;
     }
 
     .grey{
-        padding: 100px 300px!important;
+        padding: 150px 200px!important;
     }
 
     /* header */
@@ -302,6 +304,9 @@ img.profile-image{
     .ngami{
         margin-left: 30px;
         
+    }
+    .footer{
+        margin-left: 150px;
     }
 
 

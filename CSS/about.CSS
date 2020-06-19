@@ -100,6 +100,11 @@ ul.icons li{
 /* --------------------------------------------------------------Extra large devices landscape */
 @media (min-width: 1200px) and (orientation: landscape) { 
 
+    .container-fluid{
+        max-width: 90vw;
+        margin: auto;
+    }
+        
 .Junior{
     background-color:#eb5e28;
     color: black;

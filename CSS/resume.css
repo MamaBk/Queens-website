@@ -41,15 +41,109 @@ body{
  }
  .stars{
      color:#f7931e ;
+     padding-left: 23%;
  }
  .sub{
      color:white;
      font-size: 13px;
      font-weight: 500;
  }
- .ada a{
+ .code a{
      color: #f7931e;
      font-weight: 500;
  }
-
  
+
+
+ /* --------------------------------------------------------------media queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (orientation: landscape) { 
+}
+
+/* // --------------------------------------------------------------Medium devices (tablets) */
+@media (min-width: 768px) {
+    .skills{
+        border:1px solid #eb5e28;
+        background-color: #eb5e28;
+        color: white;
+        font-weight: 500;
+        margin-bottom: 30px;
+   }
+   .stars{
+       color: white;
+       font-size: 1em;
+       font-weight: 500;
+       
+   }
+   .skill h2{
+       color: white !important;
+       margin-bottom: 5px;
+       font-weight: 500;
+   }
+   .footer{
+       margin-left: 150px;
+   }
+   
+
+
+}
+
+/* // --------------------------------------------------------------Large devices (ipad pro) */
+@media (min-width: 992px) { 
+   
+}
+
+/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+}
+/* --------------------------------------------------------------Extra large devices landscape */
+@media (min-width: 1200px) and (orientation: landscape) { 
+
+    .tablet-down{
+        display: none;
+    }
+    .desktop-only{
+        display: block;
+    }
+    .mobile-only-mt{
+        margin-top: 0;
+    }
+    .desktop-only-mt{
+        margin-top: 5vh!important;
+    }
+    
+    .container-fluid{
+       max-width: 90vw;
+       margin: auto;
+   }
+    .skills{
+        border:1px solid #eb5e28;
+        background-color: #eb5e28;
+        color: white;
+        font-weight: 500;
+        margin-bottom: 30px;
+   }
+   .stars{
+       color: white;
+       font-size: 1em;
+       font-weight: 500;
+       padding-left: 70px;
+   }
+   .skill h2{
+       color: white !important;
+       margin-bottom: 5px;
+       font-weight: 500;
+   }
+   .footer{
+       margin-left: 150px;
+   }
+}
+
+/* --------------------------------------------------------------Internet Explorer */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+}
+
