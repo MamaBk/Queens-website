@@ -34,24 +34,25 @@ body{
 
 
  .eco i{
-    background-color:  #f7931e;
-    color: black;
-    border: 1px  #f7931e solid;
+    background-color:  #84a9ac;
+    color: white;
+    border: 1px  #84a9ac solid;
     border-radius: 50%;
     padding: 20px;
     font-size: 25px;    
 }
 .eco1 i{
-    background-color:  #f7931e;
-    color: black;
-    border: 1px  #f7931e solid;
+    background-color:  #84a9ac;
+    color:white;
+    border: 1px  #84a9ac solid;
     border-radius: 50%;
     padding: 20px;
     font-size: 25px;    
 }
 .jrn{
     font-weight: 500;
-    color:  #f7931e;
+    color:  #b6eb7a;
+    font-size: 1em;
 }
 
 
@@ -106,19 +107,21 @@ ul.icons li{
     }
         
 .Junior{
-    background-color:#eb5e28;
+    background-color:#204051;
     color: black;
     height: 150px;
     font-weight: 500;
     font-size: 2em;
 }
 .eco1 i{
-    border: 1px solid white;
-    background-color: white;
+    border: 1px solid #84a9ac;
+    background-color: #84a9ac;
     border-radius: 50%;
 }
 .end{
-    color: black;
+    color: #b6eb7a;
+    font-size: 20px;
+    font-weight: 500;
 }
 /*gr=eneral classes*/
 .tablet-down{

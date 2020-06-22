@@ -28,19 +28,16 @@ body{
  /*end of general classes*/
 
  /*fonts*/
- h1{
-     color:#eb5e28;
- }
  h2{
     font-size: 1.5em;
     font-weight: 300    ;
-    color: #f7931e
+    color: #b6eb7a
  }
  p{
      font-size: 1em;
  }
  .stars{
-     color:#f7931e ;
+     color:#b6eb7a ;
      padding-left: 15%;
  }
  .sub{
@@ -49,7 +46,7 @@ body{
      font-weight: 500;
  }
  .code a{
-     color: #f7931e;
+     color: #b6eb7a;
      font-weight: 500;
  }
  
@@ -67,20 +64,20 @@ body{
 /* // --------------------------------------------------------------Medium devices (tablets) */
 @media (min-width: 768px) {
     .skills{
-        border:1px solid #eb5e28;
-        background-color: #eb5e28;
+        border:1px solid #b6eb7a;
+        background-color: #b6eb7a;
         color: white;
         font-weight: 500;
         margin-bottom: 30px;
    }
    .stars{
-       color: white;
+       color: #204051;
        font-size: 1em;
        font-weight: 500;
        
    }
    .skill h2{
-       color: white !important;
+       color:#204051 !important;
        margin-bottom: 5px;
        font-weight: 500;
    }
@@ -121,22 +118,25 @@ body{
        margin: auto;
    }
     .skills{
-        border:1px solid #eb5e28;
-        background-color: #eb5e28;
+        border:1px solid #b6eb7a;
+        background-color: #b6eb7a;
         color: white;
         font-weight: 500;
         margin-bottom: 30px;
    }
    .stars{
-       color: white;
+       color: #204051;
        font-size: 1em;
        font-weight: 500;
        padding-left: 70px;
    }
    .skill h2{
-       color: white !important;
+       color: 204051 !important;
        margin-bottom: 5px;
        font-weight: 500;
+   }
+   .sub{
+       color: #204051;
    }
    .footer{
        margin-left: 150px;

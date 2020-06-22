@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background-color:black;
+    background-color:#204051;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
@@ -24,20 +24,23 @@ body{
     color: white;
 }
 span{
-    color: gray;
+    color: #b6eb7a;
 }
 .tag{
-    color: #f7931e;
+    color: #b6eb7a;
     font-weight: 500;
     font-size: 1.2em;
+}
+.tag span{
+    color:white;
 }
 h1{
     font-size: 2em;
     font-weight: 300    ;
-    color: #f7931e;
+    color:  #b6eb7a;
 }
-h1.name .get{
-    color: #eb5e28;
+h1.name {
+    color: #84a9ac;
     font-size: 2.5em;
 }
 
@@ -46,12 +49,13 @@ h1.name .get{
     border-radius: 50px;
 }
 .btn-primary{
-    background:#eb5e28;
+    background:#204051;
     border: none;
     width: 250px;
 }
 .btn-primary:hover, .btn-primary:focus{
-    background: #cf9146;
+    background: #84a9ac;
+    transition: 0.5s;
 }
 .journey{
     background-color: gray;
@@ -65,22 +69,22 @@ h1.name .get{
     border: none;
 }
 .form input {
-    background-color: gray;
+    background-color: #e7dfd5;
     height:30px;
 }
 .form textarea{
-    background-color: gray;
+    background-color: #e7dfd5;
 
 }
 .form ::placeholder{
-    color: white;
+    color: #204051;
 }
 /*footer section*/
 .f-name{
     font-size: 10px;
 }
 .f-name strong{
-    color: #eb5e28;
+    color: #b6eb7a;
 }
 
 
@@ -97,7 +101,7 @@ h1.name .get{
 }
 
 .grey{
-    background: #1a1a1a;
+    background: #3b6978;
 }
 
 /* mobile menu */
@@ -106,18 +110,18 @@ h1.name .get{
     top: 0;
     left: 100vw;
     z-index: 100;
-    background: #1a1a1a;
+    background: #204051;
     height: 100vh;
     padding-top: 20vh;
     transition: left 0.5s;
 }
 .mobile-menu a{
-    color: white;
+    color: #84a9ac;
     font-weight: 500;
     font-size: 2em;
 }
 .mobile-menu a.active{
-    color: #cf9146;
+    color: #b6eb7a;
 }
 .all-icons{
     z-index: 200;
@@ -132,7 +136,7 @@ ul.icons li{
     display: inline-block;
 }
 .icon{
-    border: 1px solid white;
+    border: 1px solid #84a9ac;
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -141,14 +145,15 @@ ul.icons li{
     text-align: center;
 }
 .icon a{
-    color: white;
+    color: #84a9ac;
     transition: color 0.5s;
 }
 .icon a:hover{
-    color: #eb5e28;
+    color: #b6eb7a;
 }
 .icon-menu{
     float: right;
+    color: #84a9ac;
 }
 hr{
     border-top: 1px solid white;
@@ -160,19 +165,22 @@ a.active{
 /* about me section */
 img.profile-image{
     width: 70%;
-    box-shadow: -30px -30px #666666;
+    box-shadow: -30px -30px #204051;
     border: 2px solid white;
 }
 
 /* testimonial */
 .orange-block{
-    background: #eb5e28;
+    background: #204051;
     width: 100%;
     height: 120px;
 }
 .orange-block a{
     color: white;
     font-weight: 500;
+}
+.orange-block a :hover{
+    color: #b6eb7a;
 }
 /*I want to move the names to the right*/
 .lecture{
@@ -263,15 +271,16 @@ img.profile-image{
     
     }
     .arrow{
-        color: gray;
+        color: #b6eb7a;
         height: 45px;
         width: 30px;
-        border: gray 1px solid;
+        border: #b6eb7a 1px solid;
         border-radius: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
         position: relative;
         left: 30vw;
+        font-weight: 500;
     }
 
     .grey{
@@ -288,13 +297,13 @@ img.profile-image{
         text-transform: uppercase;
     }
     .desktop-menu a{
-        color: white;
+        color: #84a9ac;
         font-weight: 200;
         transition: color 0.5s;
     }
     .desktop-menu a:hover{
         text-decoration: none;
-        color: #cf9146;
+        color: #b6eb7a;
     }
 
     /* about section */
