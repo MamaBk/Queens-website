@@ -101,21 +101,22 @@
           </div>
           <div class="col-12">
             <p>With all that I have learned, I am excited to start on new projects and put my skills into practice. I am very passionate about my new career and all I want to do is continue to code! There is nothing like new energy in a work environment - I am that new energy and will not give anything less than perfect. Get in touch if you want me to create your website or want to find out more about ADA. I’ll be happy to get back to you as soon as possible with any information needed or requests.</p>
-            <form action="" class="text-center form">
+            <form method="post" action="https://formspree.io/mwkrqgyl" class="text-center form">
               <div class="form-group">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Your Name" required>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your E-mail">
+                <input type="text" class="form-control" name="replyto" id="exampleFormControlInput1" placeholder="Your E-mail" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Your Message"></textarea>
+                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="8" placeholder="Your Message" required></textarea>
               </div>
             </form>
           </div>
+          <input type="submit" name="_gotcha" style="display:none">
           <!-- send button -->
           <div class="col-12 text-center">
-            <a href="AboutMe.html" class="btn btn-lg btn-primary">send</a>
+            <a href="AboutMe.html" class="btn btn-lg btn-primary" type="submit" name="_gotcha" style="display:none">send</a>
           </div>
         </div>
       </div>
