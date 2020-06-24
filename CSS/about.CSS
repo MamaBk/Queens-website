@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background-color:black;
+    background-color:#204051;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
@@ -56,25 +56,6 @@ body{
 }
 
 
-ul.icons li{
-    display: inline-block;
-}
-.icon{
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 15px;
-    padding-top: 1px;
-    text-align: center;
-}
-.icon a{
-    color: white;
-    transition: color 0.5s;
-}
-.icon a:hover{
-    color: #eb5e28;
-}
 
 
 /* --------------------------------------------------------------media queries */

@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background-color:black;
+    background-color:#204051;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
@@ -38,7 +38,7 @@ body{
  }
  .stars{
      color:#b6eb7a ;
-     padding-left: 15%;
+     padding-left: 10%;
  }
  .sub{
      color:white;
