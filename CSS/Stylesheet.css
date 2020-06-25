@@ -64,7 +64,9 @@ h1.name {
 
 
 /*contact section*/
-
+.form1{
+    display:block;
+}
 .form{
     border: none;
 }
@@ -123,6 +125,7 @@ h1.name {
 .mobile-menu a.active{
     color: #b6eb7a;
 }
+
 .all-icons{
     z-index: 200;
 }
@@ -303,6 +306,9 @@ img.profile-image{
     }
     .desktop-menu a:hover{
         text-decoration: none;
+        color: #b6eb7a;
+    }
+    .desktop-menu a.active{
         color: #b6eb7a;
     }
 
