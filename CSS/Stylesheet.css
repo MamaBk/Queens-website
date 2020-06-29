@@ -215,12 +215,7 @@ img.profile-image{
         display: block;
     }
 
-    /* about section */
-    .profile-image {
-        width: 20vw; 
-    }
-
-
+    
     /* ---Start Spacing / Layout Styles--- */
 .margin-left-40
 {
@@ -245,9 +240,7 @@ img.profile-image{
    /*general classes*/
 
    /* about section */
-   img.profile-image {
-    width: 50%;
-}
+   
  
 }
 
